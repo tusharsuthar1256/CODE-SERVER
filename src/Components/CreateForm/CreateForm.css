@@ -1,0 +1,96 @@
+.formButton {
+     background-color: rgb(47, 188, 47);
+     color: #fff;
+     padding: 10px 20px;
+     border-radius: 30px;
+     font-size: 20px;
+     position: fixed; /* Changed from absolute to fixed */
+     right: 40px;
+     bottom: 40px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     cursor: pointer;
+     z-index: 1000; /* Ensure it's above other content */
+   }
+   
+   .formButton:hover {
+     background-color: rgb(36, 146, 36);
+   }
+   
+
+   /* Centering the form container */
+   main{
+     height: 100vh;
+     width: 100%;
+     position: absolute;
+     top: 0;
+     /* background-color: red; */
+     z-index: 400;
+     background:black;
+     background:rgba(0,0,0,0.8);
+ 
+   }
+.form-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh; /* Full viewport height */
+     width: 100vw;  /* Full viewport width */
+     position: absolute;
+     top: 0;
+     z-index: 900;
+   }
+   
+   .form {
+     width: 45%;
+     height: 75%;
+     background-color: #f9f9f9;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+   }
+   
+   .form h2 {
+     margin-bottom: 20px;
+   }
+   
+   .form-group {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+   }
+   
+   .form-group label {
+     font-size: 16px;
+   }
+   
+   .form-group input,
+   .form-group textarea {
+     padding: 10px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     font-size: 14px;
+   }
+   
+   .form-group textarea {
+     resize: vertical;
+     min-height: 100px;
+   }
+   
+   .submit-button {
+     background-color: rgb(47, 188, 47);
+     color: #fff;
+     padding: 10px;
+     border: none;
+     border-radius: 4px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+   }
+   
+   .submit-button:hover {
+     background-color: rgb(36, 146, 36);
+   }
+   
