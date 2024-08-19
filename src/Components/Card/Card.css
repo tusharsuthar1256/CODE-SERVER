@@ -29,7 +29,7 @@
 .accordion-trigger {
   font-weight: bold;
   font-size: 1.2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .accordion-icon {
@@ -39,8 +39,8 @@
 
 .accordion-content {
   display: none;
-  padding: 15px;
-  background-color: black;
+  /* padding: 15px; */
+  /* background-color: black; */
   font-size: 1rem;
   color: #333;
   border-radius: 0 0 5px 5px;

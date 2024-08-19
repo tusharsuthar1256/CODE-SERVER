@@ -33,7 +33,7 @@ try {
           codes: formData.code,
           authorName: formData.authorName,
         });
-        setFormData({ title: '', code: '', authorName: '' });
+        setFormData({ title: '', codes: '', authorName: '' });
 } catch (error) {
      console.log(error);
      
@@ -50,15 +50,20 @@ try {
           }, 800);
      }
   }
+
+  const closeBtn = () => {
+    setActive(!active)
+  }
   return (
     <>
-      <button className="formButton" onClick={toggleForm}>
+      <button className="formButton" onClick={toggleForm} disabled={active}>
         Create
       </button>
       {active ? (
-        <main>
+        <main onClick={closeBtn}>
           <div className="form-container">
             <form className="form" onSubmit={handleSubmit}>
+          <button className="closeBtn" onClick={closeBtn}>X</button>
               <h2>Submit Your Post</h2>
               <div className="form-group">
                 <label htmlFor="title">Title:</label>
