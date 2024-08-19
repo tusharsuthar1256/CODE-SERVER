@@ -60,7 +60,7 @@ try {
         Create
       </button>
       {active ? (
-        <main onClick={closeBtn}>
+        <main>
           <div className="form-container">
             <form className="form" onSubmit={handleSubmit}>
           <button className="closeBtn" onClick={closeBtn}>X</button>
